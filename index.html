@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwindcss cdn -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- top navbar -->
+      <div
+        class="
+          flex flex-col
+          px-24
+          p-4
+          bg-blue-800
+          text-white
+          items-between
+          lg:flex lg:flex-row
+          justify-between
+          items-center
+        "
+      >
+        <!-- location and address -->
+        <div class="lg:flex-row lg:flex space-x-2 text-center">
+          <p>Botiano</p>
+          <a href="MailTo::admin@gmail.com">Admin@abintel.com</a>
+        </div>
+        <!-- Social media icons -->
+        <ul class="lg:flex space-x-4 text-2xl flex">
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+      </div>
+      <nav id="header" class="w-full z-30 text-white shadow-md">
+        <div
+          class="
+            w-full
+            container
+            mx-auto
+            flex flex-wrap
+            items-center
+            justify-between
+            mt-0
+            py-2
+            px-12
+          "
+        >
+          <div class="pl-4 flex items-center">
+            <a
+              class="
+                toggleColour
+                text-blue-300
+                no-underline
+                hover:no-underline
+                font-bold
+                text-2xl
+                lg:text-4xl
+              "
+              href="#"
+            >
+              <img
+                src="images/abintel logo .jpeg"
+                alt="smakktechnology logo"
+                class="h-10"
+              />
+            </a>
+          </div>
+          <div class="block lg:hidden pr-4">
+            <button
+              id="nav-toggle"
+              class="
+                flex
+                items-center
+                p-1
+                text-blue-400
+                hover:text-gray-900
+                focus:outline-none focus:shadow-outline
+                transform
+                transition
+                hover:scale-105
+                duration-300
+                ease-in-out
+              "
+            >
+              <svg
+                class="fill-current h-6 w-6"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <!-- navigation -->
+          <div
+            class="
+              w-full
+              flex-grow
+              lg:flex lg:items-center lg:w-auto
+              hidden
+              mt-2
+              lg:mt-0
+              bg-white
+              lg:bg-transparent
+              text-black
+              p-4
+              lg:p-0
+              z-20
+            "
+            id="nav-content"
+          >
+            <!-- NAv list -->
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    py-2
+                    px-4
+                    text-blue-800
+                    font-bold
+                    shadow
+                    focus:outline-none focus:shadow-outline
+                    transform
+                    transition
+                    hover:scale-105
+                    duration-300
+                    ease-in-out
+                  "
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    text-black
+                    no-underline
+                    hover:bg-blue-800 hover:text-blue-100 hover:text-underline
+                    py-2
+                    px-4
+                  "
+                  href="about-page.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    text-black
+                    no-underline
+                    hover:bg-blue-800 hover:text-blue-100 hover:text-underline
+                    py-2
+                    px-4
+                  "
+                  href="service-page.html"
+                  >Service</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    text-black
+                    no-underline
+                    hover:bg-blue-800 hover:text-blue-100 hover:text-underline
+                    py-2
+                    px-4
+                  "
+                  href="service-page.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+      </nav>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section class="hero w-full">
+        <div
+          class="h-5/6 py-48 bg-cover bg-center"
+          style="background-image: url('/images/hero-image.jpg')"
+        >
+          <div
+            class="
+              grid
+              max-w-screen-xl
+              px-6
+              mx-auto
+              lg:px-8
+              xl:px-4
+              md:grid-cols-4
+              xl:grid-cols-5
+              gap-x-12
+              lg:gap-x-20
+            "
+          >
+            <div
+              class="self-center order-2 col-span-2 mt-12 md:order-1 md:mt-0"
+            >
+              <h1
+                class="
+                  mb-2
+                  text-3xl
+                  font-bold
+                  text-white
+                  md:text-4xl
+                  lg:text-5xl
+                  md:mb-4
+                  lg:mb-8
+                "
+              >
+                The best way to write code all day
+              </h1>
+              <p class="mb-6 text-lg text-gray-200 xl:text-xl lg:mb-8 xl:mb-10">
+                For writers, a random sentence can help them get their creative
+                juices flowing. Since the topic.
+              </p>
+              <div class="flex mb-6 space-x-4">
+                <button
+                  class="
+                    inline-block
+                    px-5
+                    py-2
+                    font-semibold
+                    text-white
+                    rounded-lg
+                    focus:outline-none
+                    bg-gradient-to-br
+                    from-indigo-600
+                    to-indigo-700
+                    hover:from-indigo-500 hover:to-indigo-700
+                  "
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="order-1 col-span-2 md:order-2 xl:col-span-3">
+              <img src="" class="rounded-lg shadow-2xl" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services section -->
+      <section class="w-full bg-gray-200 lg:px-24 px-16 mx-auto">
+        <!-- Services title -->
+        <div class="title">
+          <h2
+            class="
+              text-4xl
+              font-bold
+              uppercase
+              pt-10
+              px-6
+              text-center text-red-600
+            "
+          >
+            Services
+          </h2>
+          <p class="text-center text-lg py-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+            vitae?
+          </p>
+        </div>
+        <!-- services grid -->
+        <div
+          class="
+            lg:grid lg:gap-y-2 lg:gap-x-4
+            md:grid md:gap-x-8
+            lg:grid-cols-3
+            md:grid-cols-2
+            flex-col flex
+            align-baseline
+            text-center
+            lg:px-12
+            py-4
+            px-0
+            text-gray-700
+          "
+        >
+          <div
+            class="
+              bg-white
+              px-12
+              py-10
+              text-center
+              mb-8
+              hover:bg-red-200 hover:text-gray-900
+            "
+          >
+            <img src="" alt="" />
+            <strong>
+              Investment Studies (Feasibility Studies) and Business Development
+              Plans
+            </strong>
+          </div>
+          <div
+            class="
+              bg-white
+              px-12
+              py-10
+              text-center
+              mb-8
+              hover:bg-red-200 hover:text-gray-900
+            "
+          >
+            <img src="" alt="" />
+            <strong> Project Design & Management </strong>
+          </div>
+          <div
+            class="
+              bg-white
+              px-12
+              py-10
+              text-center
+              mb-8
+              hover:bg-red-200 hover:text-gray-900
+            "
+          >
+            <img src="" alt="" />
+            <strong> Commercialisation & Marketing of Organisations </strong>
+          </div>
+          <div
+            class="
+              bg-white
+              px-12
+              py-10
+              text-center
+              mb-8
+              hover:bg-red-200 hover:text-gray-900
+            "
+          >
+            <img src="" alt="" />
+            <strong> Operations/Production Management </strong>
+          </div>
+          <div
+            class="
+              bg-white
+              px-12
+              py-10
+              text-center
+              mb-8
+              hover:bg-red-200 hover:text-gray-900
+            "
+          >
+            <img src="" alt="" />
+            <strong> Plant Maintenance Management </strong>
+          </div>
+          <div
+            class="
+              bg-white
+              px-12
+              py-10
+              text-center
+              mb-8
+              hover:bg-red-200 hover:text-gray-900
+            "
+          >
+            <img src="" alt="" />
+            <strong> Environmental and Safety Management </strong>
+          </div>
+          <div
+            class="
+              bg-white
+              px-12
+              py-10
+              text-center
+              mb-8
+              hover:bg-red-200 hover:text-gray-900
+            "
+          >
+            <img src="" alt="" />
+            <strong> Procurement and Materials Management </strong>
+          </div>
+          <div
+            class="
+              bg-white
+              px-12
+              py-10
+              text-center
+              mb-8
+              hover:bg-red-200 hover:text-gray-900
+            "
+          >
+            <img src="" alt="" />
+            <strong> Management Information System </strong>
+          </div>
+          <div
+            class="
+              bg-white
+              px-12
+              py-10
+              text-center
+              mb-8
+              hover:bg-red-200 hover:text-gray-900
+            "
+          >
+            <img src="" alt="" />
+            <strong> Capacity Building in Public/Private Organisations </strong>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <!-- upper footer -->
+        <div class="flex flex-col bg-blue-900 lg:px-32 lg:flex-row   md:Xpy-20 space-x-8 items-center mx-auto">
+          <!-- about us -->
+          <div class="w-1/3">
+            <h2 class="uppercase text-white text-2xl mt-10">
+              You are welcome to ab-intel limited
+            </h2>
+            <button class="text-white py-4 px-8 bg-blue-800 my-10">
+              Get in touch
+            </button>
+          </div>
+          <!-- location and contact info -->
+          <div class="flex flex-col text-md text-white  shrink w-1/3 ">
+          <h2 class="text-red-100 text-2xl mb-10">Ab-intel Limited</h2>
+          <p>#31 CHIMPEE AVE, KWASHIEMAN – OFANKOR STREET, OFF GEORGE BUSH MOTORWAY, ACCRA
+            Ghana
+            </p>
+            <p class="lg:mb-14">P. O. Box OS 1542</p>
+                <p>Osu- Accra</p>
+                <p>Telephone: 233- 244- 690 - 792/265 – 009 – 046</p>
+                <p>Email:  cabakayankson@ab-intelgh.com/cabakayankson1@gmail.com</p>
+
+        
+        </div>
+          <!-- social media links -->
+        <div>
+            <h2 class="text-red-100 text-2xl mb-10">Social Media</h2>
+            <div class="flex flex-row text-red-100">
+                <ul class="lg:flex space-x-4 text-2xl flex">
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                  </ul>
+            </div>
+        </div>
+        </div>
+        <!-- lower footer -->
+        <div class="bg-blue-800 px-24 text-center text-white">
+          <p class="py-4">
+            &copy; 2021 Ab-intel Ltd<sup>&reg;</sup>. All right reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/dist/owl.carousel.min.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
