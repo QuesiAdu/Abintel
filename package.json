@@ -1,0 +1,19 @@
+{
+  "name": "abintel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i src/input.css -o public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pappy04/Abintel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pappy04/Abintel/issues"
+  },
+  "homepage": "https://github.com/pappy04/Abintel#readme"
+}
