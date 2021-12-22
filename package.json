@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pappy04/Abintel/issues"
   },
-  "homepage": "https://github.com/pappy04/Abintel#readme"
+  "homepage": "https://github.com/pappy04/Abintel#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0"
+  }
 }
