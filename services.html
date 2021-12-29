@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public/style.css" />
+    <!-- tailwindcss cdn -->
+
+    <!-- Fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="">
+    <header>
+      <!-- top navbar -->
+      <div
+        class="
+          flex flex-col
+          px-24
+          p-4
+          bg-blue-800
+          text-white
+          items-between
+          lg:flex lg:flex-row
+          justify-between
+          items-center
+        "
+      >
+        <!-- location and address -->
+        <div class="lg:flex-row lg:flex space-x-2 text-center">
+          <p>Botiano</p>
+          <a href="MailTo::admin@gmail.com">Admin@abintel.com</a>
+        </div>
+        <!-- Social media icons -->
+        <ul class="lg:flex space-x-4 text-2xl flex">
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+      </div>
+      <nav id="header" class="w-full z-30 text-white shadow-md">
+        <div
+          class="
+            w-full
+            container
+            mx-auto
+            flex flex-wrap
+            items-center
+            justify-between
+            mt-0
+            py-2
+            px-12
+          "
+        >
+          <div class="pl-4 flex items-center">
+            <a
+              class="
+                toggleColour
+                text-blue-300
+                no-underline
+                hover:no-underline
+                font-bold
+                text-2xl
+                lg:text-4xl
+              "
+              href="#"
+            >
+              <img
+                src="images/abintel logo .jpeg"
+                alt="smakktechnology logo"
+                class="h-10"
+              />
+            </a>
+          </div>
+          <div class="block lg:hidden pr-4">
+            <button
+              id="nav-toggle"
+              class="
+                flex
+                items-center
+                p-1
+                text-blue-400
+                hover:text-gray-900
+                focus:outline-none focus:shadow-outline
+                transform
+                transition
+                hover:scale-105
+                duration-300
+                ease-in-out
+              "
+            >
+              <svg
+                class="fill-current h-6 w-6"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <!-- navigation -->
+          <div
+            class="
+              w-full
+              flex-grow
+              lg:flex lg:items-center lg:w-auto
+              hidden
+              mt-2
+              lg:mt-0
+              bg-white
+              lg:bg-transparent
+              text-black
+              p-4
+              lg:p-0
+              z-20
+            "
+            id="nav-content"
+          >
+            <!-- NAv list -->
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    py-2
+                    px-4
+                    text-blue-800
+                    font-bold
+                    shadow
+                    focus:outline-none focus:shadow-outline
+                    transform
+                    transition
+                    hover:scale-105
+                    duration-300
+                    ease-in-out
+                  "
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    text-black
+                    no-underline
+                    hover:bg-blue-800 hover:text-blue-100 hover:text-underline
+                    py-2
+                    px-4
+                  "
+                  href="about-page.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    text-black
+                    no-underline
+                    hover:bg-blue-800 hover:text-blue-100 hover:text-underline
+                    py-2
+                    px-4
+                  "
+                  href="service.html"
+                  >Service</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="
+                    inline-block
+                    text-black
+                    no-underline
+                    hover:bg-blue-800 hover:text-blue-100 hover:text-underline
+                    py-2
+                    px-4
+                  "
+                  href="service-page.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="
+        w-full
+        flex flex-col
+        py-10
+        md:h-2/5
+        items-center
+        bg-cover bg-center
+        text-white
+        relative
+        z-0
+      "
+      style="background-image: url('/images/hero-image.jpg')"
+    >
+      <h1 class="text-white text-6xl mt-20 font-bold z-10">Services</h1>
+      <p
+        class="
+          text-lg
+          mb-24
+          text-gray-200 text-center
+          px-6
+          z-10
+          leading-7
+          md:px-24
+        "
+      >
+        The range of services AB Intel provides covers the entire value chain
+        for any business undertaking irrespective of the size (small, medium and
+        large scale). In this respect, we team up with our associate consulting
+        firms to provide the expertise needed for each phase of the project
+        management.
+      </p>
+      <!-- background dim -->
+      <div
+        class="absolute w-full h-full opacity-60 top-0 left-0 bg-gray-900"
+      ></div>
+    </div>
+    <main>
+      <div class="w-full md:px-30 lg:px-44">
+        <section id="investment" class="p-20">
+          <h2 class="text-3xl font-bold text-blue-400">
+            INVESTMENT STUDIES AND BUSINESS DEVELOPMENT
+          </h2>
+          <hr class="border-blue-400 border-2 my-4" />
+          <ul class="space-y-4">
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Feasibility Studies
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Development of
+              Business Plans
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Acquisitions and
+              Mergers Management
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Business Process
+              Re-engineering
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Corporate
+              Restructuring and Financial Engineering
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Commercial and
+              Economic Viability Surveys
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Corporate Finance
+              and Advisory Services
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Bank Negotiation
+              Assistance
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Business Valuations
+            </li>
+          </ul>
+        </section>
+
+        <section id="project-design" class="p-20">
+          <h2 class="text-3xl font-bold text-blue-400">
+            PROJECT DESIGN & MANAGEMENT AND ENGINEERING SERVICES
+          </h2>
+          <hr class="border-blue-400 border-2 my-4" />
+          <ul class="space-y-4">
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Project Design from
+              Project Formulation to Turn-over andStart-up
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Project Management
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Process Design and
+              Development of New Businesses
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Plant and Equipment
+              Audit for Rehabilitation Projects
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Technical Audit of
+              Organisations
+            </li>
+          </ul>
+        </section>
+        <section id="project-design" class="p-20">
+          <h2 class="text-3xl font-bold text-blue-400">
+            COMMERCIALISATION & MARKETING OF ORGANISATIONS
+          </h2>
+          <hr class="border-blue-400 border-2 my-4" />
+          <ul class="space-y-4">
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Marketing Auditing
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>Resource Auditing
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>Marketing Research
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>Developing Marketing
+              Strategy
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Strategic
+              Commercialisation Planning
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Developing Marketing
+              Systems
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Marketing of
+              Services
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> Customer & Client
+              Impact Surveys
+            </li>
+          </ul>
+        </section>
+        <section id="project-design" class="p-20">
+          <h2 class="text-3xl font-bold text-blue-400">
+            OPERATIONS/PRODUCTION MANAGEMENT
+          </h2>
+          <hr class="border-blue-400 border-2 my-4" />
+          <ul class="space-y-4">
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>Process Flow Design,
+              Analysis and Improvements
+            </li>
+            <li>Process Analysis and Process Re-design</li>
+            <li>Total Quality Management</li>
+            <li>Capital Management</li>
+            <li>Facilities Planning</li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i> System Management
+              Systems
+            </li>
+            <li>Materials Management</li>
+            <li></li>
+            <li>Inventory Management</li>
+            <li></li>
+            <li>Material Requirement Planning (MRP)</li>
+            <li></li>
+            <li>production Scheduling</li>
+            <li></li>
+            <li>Change Management</li>
+          </ul>
+        </section>
+        <section class="p-20">
+          <h2 class="text-blue-400 text-3xl font-bold">
+            MAINTENANCE MANAGEMENT
+          </h2>
+          <hr class="border-2 border-blue-400 my-4" />
+          <ul class="space-y-4">
+            <li class="font-bold"><i class="fas fa-arrow-alt-circle-right"></i>
+              Overall Audit of the Maintenance Function and its Place in the
+              Organisation Structure
+            </li>
+            <li class="font-bold"><i class="fas fa-arrow-alt-circle-right"></i>
+              Audit of Organisation Procedures for Maintenance Activities
+              including:
+            </li>
+            <li>Maintenance Planning</li>
+            <li>Maintenance Scheduling and Programming</li>
+            <li>Maintenance Work Execution and Workshop Organisation</li>
+            <li>Spare Parts Resourcing and Storage</li>
+            <li>Procurement of Materials and Replacement Items</li>
+            <li>Audit of Maintenance Information Procedures and Methods</li>
+            <li>
+              Maintenance Budgeting, Cost Control and Follow-up Activities
+            </li>
+          </ul>
+        </section>
+        <section id="project-design" class="p-20">
+          <h2 class="text-3xl font-bold text-blue-400">
+            ENVIRONMENTAL AND SAFETY MANAGEMENT
+          </h2>
+          <hr class="border-blue-400 border-2 my-4" />
+          <ul class="space-y-4">
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>Environmental Impact Assessment Studies (EIAs)</li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>Environmental Management Plans (EMPs)
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>Safety System Evaluation and Management
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>Health and Safety Audits
+            </li>
+            
+           
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="bg-slate-800 w-full">
+      <div class="w-full lg:flex lg:flex-row p-4 lg:justify-evenly md:py-16">
+        <!--Site cta-->
+        <div class="flex flex-col px-10">
+          <h2 class="text-blue-500 font-bold py-4">AB-INTEL LIMITED</h2>
+          <hr class="border-b-1 my-2" />
+          <div class="space-y-2">
+            <button
+              class="p-4 bg-blue-800 my-4 block hover:bg-blue-600 text-white"
+            >
+              Get In Touch
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col px-10 text-white">
+          <h2 class="text-blue-500 font-bold py-4 capitalize">
+            Address and location
+          </h2>
+          <hr class="border-b-1 my-2" />
+          <p class="py-2">
+            #31 CHIMPEE AVE, KWASHIEMAN – OFANKOR STREET, OFF GEORGE BUSH
+            MOTORWAY, ACCRA Ghana
+          </p>
+          <p class="py-2">P. O. Box OS 1542</p>
+          <p class="py-2">Osu- Accra</p>
+          <p class="py-2">Telephone: 233- 244- 690 - 792/265 – 009 – 046</p>
+          <p class="py-2">
+            Email: cabakayankson@ab-intelgh.com/cabakayankson1@gmail.com
+          </p>
+        </div>
+        <div class="flex flex-col px-10 text-white">
+          <h2 class="text-blue-500 font-bold py-4 capitalize">Links</h2>
+          <hr class="border-b-1 my-2" />
+          <ul class="mt-4 space-y-4">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/service.html">Service</a></li>
+            <li><a href="/Contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col px-10">
+          <h2 class="text-blue-500 font-bold py-4 capitalize">social</h2>
+          <hr class="border-b-1 my-2" />
+          <!-- Social list -->
+          <ul class="flex flex-row text-2xl text-white space-x-4">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+          </ul>
+        </div>
+      </div>
+      <!-- lower footer -->
+      <div class="bg-blue-800 px-24 text-center text-white">
+        <p class="py-4">
+          &copy; 2021 Ab-intel Ltd<sup>&reg;</sup>. All right reserved
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/dist/owl.carousel.min.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
