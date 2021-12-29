@@ -20,7 +20,7 @@
 </head>
 
 <body class="font-Nunito">
-  <header>
+  <header class=" relative">
     <!-- top navbar -->
     <div class="
           flex flex-col
@@ -32,6 +32,7 @@
           lg:flex lg:flex-row
           justify-between
           items-center
+          
         ">
       <!-- location and address -->
       <div class="lg:flex-row lg:flex space-x-2 text-center">
@@ -45,7 +46,7 @@
         <li><i class="fab fa-linkedin"></i></li>
       </ul>
     </div>
-    <nav id="header" class="w-full z-30 text-white shadow-md">
+    <nav id="header" class="w-full z-30 text-white shadow-md static top-0 relative">
       <div class="
             w-full
             container
@@ -57,7 +58,7 @@
             py-2
             px-12
           ">
-        <div class="pl-4 flex items-center">
+        <div class="pl-4 flex items-center static">
           <a class="
                 toggleColour
                 text-blue-300
@@ -104,6 +105,7 @@
               p-4
               lg:p-0
               z-20
+              
             " id="nav-content">
           <!-- NAv list -->
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
@@ -121,6 +123,7 @@
                     hover:scale-105
                     duration-300
                     ease-in-out
+                    
                   " href="index.html">Home</a>
             </li>
             <li class="mr-3">
